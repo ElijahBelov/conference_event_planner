@@ -1,0 +1,3 @@
+sticky scroll?
+scroll has above image in background
+show details
