@@ -1,3 +1,19 @@
 sticky scroll?
 scroll has above image in background
 show details
+conferenceEvent.handleAddToCart hardcoded
+venueSlice.increment/decrementQuantity hardcoded
+venue Rooms disable increment button on 10
+meal pictures
+Ensure numberOfPeople is set before toggling selection
+const handleMealSelection = (index) => {
+    const item = mealsItems[index];
+    if (item.selected && item.type === "mealForPeople") {
+        // Ensure numberOfPeople is set before toggling selection
+        const newNumberOfPeople = item.selected ? numberOfPeople : 0;
+        dispatch(toggleMealSelection(index, newNumberOfPeople));
+    }
+    else {
+        dispatch(toggleMealSelection(index));
+    }
+};
